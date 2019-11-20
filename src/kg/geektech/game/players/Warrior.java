@@ -11,7 +11,7 @@ public class Warrior extends Hero {
 
     @Override
     public void useAbility(Hero[] heroes, Boss boss) {
-        heroes[0].setDamage(heroes[0].getDamage()+boss.getDamage());
+        heroes[0].setDamage(10+boss.getDamage());
         System.out.println("Warrior Damage = " + heroes[0].getDamage());
 
     }

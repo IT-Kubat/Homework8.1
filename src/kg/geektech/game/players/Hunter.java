@@ -14,8 +14,10 @@ public class Hunter extends Hero {
     @Override
     public void useAbility(Hero[] heroes, Boss boss) {
         Random r = new Random();
-        int x = r.nextInt(4)+2;
-        heroes[1].setDamage(heroes[1].getDamage()*x);
-        System.out.println("Hunter damage = " + heroes[1].getDamage());
+        int x = r.nextInt(3)+2;
+//        heroes[1].setDamage(10*x);
+        boss.setHealth(boss.getHealth()-heroes[1].getDamage() *x);
+        if (boss.getHealth()<1) boss.setHealth(0);
+        System.out.println("Boss health after hunter damage = " + boss.getHealth());
     }
 }

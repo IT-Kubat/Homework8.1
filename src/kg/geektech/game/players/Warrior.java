@@ -11,8 +11,10 @@ public class Warrior extends Hero {
 
     @Override
     public void useAbility(Hero[] heroes, Boss boss) {
-        heroes[0].setDamage(10+boss.getDamage());
-        System.out.println("Warrior Damage = " + heroes[0].getDamage());
+//        heroes[0].setDamage(10+boss.getDamage());
+        boss.setHealth(boss.getHealth()-(boss.getDamage() + heroes[0].getDamage()));
+        if (boss.getHealth()<1) boss.setHealth(0);
+        System.out.println("boss health after warrior damage = " + boss.getHealth());
 
     }
 }

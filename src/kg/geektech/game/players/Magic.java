@@ -15,9 +15,9 @@ public class Magic extends Hero {
     public void useAbility(Hero[] heroes, Boss boss) {
         for (int i = 0; i < heroes.length-1; i++) {
             Random r = new Random();
-            int x = r.nextInt(4)+2;
+            int x = r.nextInt(3)+2;
             heroes[i].setDamage(heroes[i].getDamage()+x);
-            System.out.println("Magic Attack " + heroes[i].getClass().getName() +" damage = "+heroes[i].getDamage());
+            System.out.println("Magic Attack " + heroes[i].getClass().getName() +" damage = "+heroes[i].getDamage()+" random is = "+x);
 
         }
 

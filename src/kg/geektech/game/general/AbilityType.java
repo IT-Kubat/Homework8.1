@@ -5,5 +5,7 @@ public enum AbilityType {
     CRITICAL_DAMAGE,
     HEAL,
     BOOST,
+    UNIQUE_ABILITY,
+
 }
 

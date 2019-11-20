@@ -8,7 +8,7 @@ public class Medic extends Hero {
 
     public Medic(int health, int damage) {
 
-        super(health, damage, AbilityType.HEAL);
+        super(health, damage, AbilityType.UNIQUE_ABILITY, AbilityType.HEAL);
     }
 
     public int getHeal_points(int i) {

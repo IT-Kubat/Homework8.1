@@ -13,12 +13,13 @@ public class RPGGame {
         medic.getHeal_points(5);
         Hunter hunter = new Hunter(100, 10);
         Magic magic = new Magic(100, 10);
-        Hero[] heroes = {warrior, medic, hunter, magic};
+        Hero[] heroes = {warrior,  hunter, magic, medic};
 
         printStatistics(heroes, boss);
         while (!isFinished(heroes, boss)) {
             round(heroes, boss);
         }
+
     }
 
 

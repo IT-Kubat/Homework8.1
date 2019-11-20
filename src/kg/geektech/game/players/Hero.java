@@ -6,6 +6,7 @@ import kg.geektech.game.general.GameEntity;
 public abstract class Hero extends GameEntity implements HavingAbility {
     private AbilityType abilityType;
 
+
     public AbilityType getAbilityType() {
         return abilityType;
     }
@@ -14,7 +15,7 @@ public abstract class Hero extends GameEntity implements HavingAbility {
         this.abilityType = abilityType;
     }
 
-    public Hero(int health, int damage, AbilityType abilityType) {
+    public Hero(int health, int damage, AbilityType uniqueAbility, AbilityType abilityType) {
         super(health, damage);
         this.abilityType = abilityType;
     }
